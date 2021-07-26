@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Here you can visually see how the sorting algorithm is working | @VishnuGaneshan ">
+    <title>Sorting Visualizer</title>
+
+</head>
+<body>
+    <h1 id = "title">Sorting Visualizer</h1>
+    <script type="module" src="./main.js" >
+    </script>
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="btn" style="text-align:left">
+            <button id="customArray" type="button" class="btn btn-dark" onclick="customArray()">New Array</button>
+            <button id="newArray" type="button" class="btn btn-dark">Random Array</button>
+        </div>
+        <div class="btn" style="text-align:right">
+            <button id="bubbleSort" type="button" class="btn btn-dark">Bubble Sort</button>
+            <button id="selectionSort" type="button" class="btn btn-dark">Selection Sort</button>
+            <button id="insertionSort" type="button" class="btn btn-dark">Insertion Sort</button>
+            <button id="quickSort" type="button" class="btn btn-dark" onclick="update()">Quick Sort</button>
+            <button id="mergeSort" type="button" class="btn btn-dark" onclick="update()">Merge Sort</button>
+        </div>
+    </nav>
+    <div id="inputArray">
+        <b>Enter Number To store in array:</b>
+        <input type="text" id="itArray" maxlength="400" placeholder="input numbers (0 - 100)">
+        <button id="customArrayCreate">Create</button>
+        <button id="cusArrCancel">Cancel</button>
+    </div>
+    <nav id="bars" >
+    </nav>
+    <script>
+        function customArray(){
+            document.getElementById("inputArray").style.display = "block";
+            document.getElementById("bars").style.display = "none";
+        }
+        function update(){
+            alert("This feature will be added soon");
+        }
+    </script>
+</body>
+</html>
