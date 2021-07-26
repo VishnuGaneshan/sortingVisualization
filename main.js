@@ -1,7 +1,7 @@
-import { bubbleSort , stop as bstop } from "./modules/bubbleSort.js";
-import { selectionSort, stop as sstop } from "./modules/selectionSort.js";
-import { createBar } from "./modules/array.js";
-import { insertionSort , stop as istop } from "./modules/insertionSort.js";
+import { bubbleSort , stop as bstop } from "./bubbleSort.js";
+import { selectionSort, stop as sstop } from "./selectionSort.js";
+import { createBar } from "./array.js";
+import { insertionSort , stop as istop } from "./insertionSort.js";
 // import { quickSort } from "./modules/quickSort.js";
 import { sleep } from "./modules/common.js";
 
